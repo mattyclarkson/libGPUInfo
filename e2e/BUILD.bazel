@@ -1,0 +1,11 @@
+load("@bazel_skylib//rules:build_test.bzl", "build_test")
+
+build_test(
+    name = "libarmgpuinfo",
+    targets = ["@libarmgpuinfo"],
+)
+
+build_test(
+    name = "arm-gpu-info",
+    targets = ["@libarmgpuinfo//:arm-gpu-info"],
+)
