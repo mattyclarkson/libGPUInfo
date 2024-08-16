@@ -1,0 +1,11 @@
+alias(
+    name = "libarmgpuinfo",
+    actual = "//source:libarmgpuinfo",
+    visibility = ["//visibility:public"],
+)
+
+alias(
+    name = "arm-gpu-info",
+    actual = "//source:arm-gpu-info",
+    visibility = ["//visibility:public"],
+)
