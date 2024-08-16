@@ -1,0 +1,7 @@
+module(
+    name = "libarmgpuinfo",
+)
+
+bazel_dep(name = "rules_cc", version = "0.0.9")
+
+bazel_dep(name = "hermetic_cc_toolchain", version = "3.1.0", dev_dependency = True)
