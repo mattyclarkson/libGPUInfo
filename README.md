@@ -125,8 +125,15 @@ connection then we can return no useful information. In this case the
 
 The library is provided as a single C++ source file and a single C++ header
 file. It is expected that developers will copy the files directly into their
-existing application build system, so no off-the-shelf build system is provided
-for the library integration.
+existing application build system.
+
+## CMake
+
+The project uses CMake as the canonical build system.
+
+## Bazel
+
+The library is available in the Bazel Central Registry (BCR) as [`libarmgpuinfo`][5].
 
 # Sample application
 
@@ -170,3 +177,4 @@ _Copyright © 2023-2024, Arm Limited and contributors. All rights reserved._
 [2]: https://developer.arm.com/documentation/102849/latest/
 [3]: https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_ARM_shader_core_properties.html
 [4]: https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_ARM_shader_core_builtins.html
+[5]: https://registry.bazel.build/modules/libarmgpuinfo
